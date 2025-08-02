@@ -64,6 +64,8 @@ E_Commerce_Customer_Satisfaction_Score_Prediction using Deep_Learning
 
 - **Python**
 - **Pandas, Numpy** (Data processing)
+- **Keras, TensorFlow** (Deep Learning models)
+- **Matplotlib, Seaborn** (Exploratory Data Analysis and Visualization)
 - **Flask** (Local Model Deployment)
 
 ---

@@ -70,24 +70,71 @@ E_Commerce_Customer_Satisfaction_Score_Prediction using Deep_Learning
 
 ---
 
-## 🎯 How to Run
+## Goal
 
-1. **Clone the Repository**
-    ```
-    git clone https://github.com/YOUR_USERNAME/E_Commerce_Customer_Satisfaction_Score_Prediction.git
-    cd E_Commerce_Customer_Satisfaction_Score_Prediction
-    ```
-2. **Install Dependencies**
-    ```
-    pip install -r requirements.txt
-    ```
-3. **Explore and Train**
-   - Jupyter Notebooks:  
-     - `E_Commerce_Customer_Satisfaction_Score_Prediction.ipynb` – Full pipeline  
-     - `flask_eCommerce_Customer_Satisfaction_Score_Prediction.ipynb` – Deployment prep
-    ```
-4. **Model Predictions**
-    - Access the web app on [localhost:5000](http://localhost:5000) to input data and get CSAT predictions.
+Predict Customer Satisfaction (CSAT) scores from e-commerce customer interactions using Deep Learning Artificial Neural Networks (ANNs).
+
+---
+
+## 📝 Overview
+
+**DeepCSAT** leverages deep learning to predict CSAT scores in the e-commerce domain. By analyzing customer interactions and feedback, the project enables businesses to proactively monitor and improve customer satisfaction, driving retention and growth. The pipeline integrates robust data handling, advanced neural modeling, and intuitive deployment for actionable business outcomes.
+
+---
+
+## 🔍 Project Background
+
+Customer satisfaction is a cornerstone for repeat business, loyalty, and positive word-of-mouth. Traditional approaches rely on slow, subjective surveys. Deep learning makes it possible to **predict CSAT in real time**, offering a detailed, data-driven perspective to spot gaps and elevate service quality.
+
+---
+
+## 📅 Dataset Overview
+
+The dataset includes one month of customer service interactions at "Shopzilla," with:
+
+- **Unique id**: Primary record identifier (integer)
+- **Channel name**: Customer service channel (string)
+- **Category/Sub-category**: Interaction type (string)
+- **Customer Remarks**: Direct feedback (string)
+- **Order id/Order date time/Issue reported/Issue responded/Survey response date**: Temporal & order references (various datetime)
+- **Customer city**: Location (string)
+- **Product category**: Product classification (string)
+- **Item price**: Transaction value (float)
+- **Connected handling time**: Interaction length (float)
+- **Agent name/Supervisor/Manager/Tenure Bucket/Shift**: Human resource metadata (strings)
+- **CSAT Score**: Target variable (integer)
+
+---
+
+## ✅ Model Artifacts
+
+Stored in the root project directory:
+
+- `csat_model.h5` – Trained Keras deep learning model
+- `scaler.pkl` – Feature scaler used during training
+- `features.pkl` – List of engineered and selected features
+- `eCommerce_Customer_support_data.csv` – Full processed dataset
+
+---
+
+## 🚀 Deployment
+
+- **Streamlit + Flask App (`app.py`)**:  
+  Launches a lightweight UI for CSAT prediction, exposing an easy-to-use web interface.
+
+---
+
+## 🗂️ Key Files
+
+| File                                                    | Purpose                              |
+|---------------------------------------------------------|--------------------------------------|
+| DeepCSAT_E_Commerce_Customer_Satisfaction_Score_Prediction.ipynb | Main Jupyter notebook with all experiments and EDA |
+| csat_model.h5                                           | Trained DNN model artifact           |
+| app.py                                                  | Hybrid Streamlit/Flask prediction app|
+| scaler.pkl, features.pkl                                 | Data preprocessing objects           |
+| eCommerce_Customer_support_data.csv                     | Cleaned input dataset                |
+
+
 ---
 
 ## ✨ Results & Insights
@@ -115,6 +162,10 @@ PRs and suggestions welcome! Please fork the repo and submit pull requests.
 This project is licensed under the MIT License.
 
 ---
+
+## 🙋 Author
+
+Lokesh Todi
 
 > *Empowering e-commerce with actionable real-time customer satisfaction insights using Deep Learning.*
 

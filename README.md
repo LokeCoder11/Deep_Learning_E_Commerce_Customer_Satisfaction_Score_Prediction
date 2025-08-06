@@ -46,17 +46,19 @@ E_Commerce_Customer_Satisfaction_Score_Prediction using Deep_Learning
 **Size:** ~19.2MB (`eCommerce_Customer_support_data.csv`)
 
 ### **Features:**
-- `Unique id` : Record identifier *(int)*
-- `Channel name` : Service channel *(str)*
-- `Category`, `Sub-category` : Interaction details *(str)*
-- `Customer Remarks` : Customer feedback *(str)*
-- `Order id`, `Order date time` : Order details *(int, datetime)*
-- `Issue reported at`, `Issue responded`, `Survey response date` : Timestamps *(datetime)*
-- `Customer city`, `Product category` : Location and item *(str)*
-- `Item price`, `Connected handling time` : Numerical features *(float)*
-- `Agent name`, `Supervisor`, `Manager` : Staff involved *(str)*
-- `Tenure Bucket`, `Agent Shift` : Agent characteristics *(str)*
-- `CSAT Score` : Satisfaction score (target) *(int)*
+The dataset includes one month of customer service interactions at "Shopzilla," with:
+
+- **Unique id**: Primary record identifier (integer)
+- **Channel name**: Customer service channel (string)
+- **Category/Sub-category**: Interaction type (string)
+- **Customer Remarks**: Direct feedback (string)
+- **Order id/Order date time/Issue reported/Issue responded/Survey response date**: Temporal & order references (various datetime)
+- **Customer city**: Location (string)
+- **Product category**: Product classification (string)
+- **Item price**: Transaction value (float)
+- **Connected handling time**: Interaction length (float)
+- **Agent name/Supervisor/Manager/Tenure Bucket/Shift**: Human resource metadata (strings)
+- **CSAT Score**: Target variable (integer)
 
 ---
 
@@ -86,23 +88,6 @@ Predict Customer Satisfaction (CSAT) scores from e-commerce customer interaction
 
 Customer satisfaction is a cornerstone for repeat business, loyalty, and positive word-of-mouth. Traditional approaches rely on slow, subjective surveys. Deep learning makes it possible to **predict CSAT in real time**, offering a detailed, data-driven perspective to spot gaps and elevate service quality.
 
----
-
-## 📅 Dataset Overview
-
-The dataset includes one month of customer service interactions at "Shopzilla," with:
-
-- **Unique id**: Primary record identifier (integer)
-- **Channel name**: Customer service channel (string)
-- **Category/Sub-category**: Interaction type (string)
-- **Customer Remarks**: Direct feedback (string)
-- **Order id/Order date time/Issue reported/Issue responded/Survey response date**: Temporal & order references (various datetime)
-- **Customer city**: Location (string)
-- **Product category**: Product classification (string)
-- **Item price**: Transaction value (float)
-- **Connected handling time**: Interaction length (float)
-- **Agent name/Supervisor/Manager/Tenure Bucket/Shift**: Human resource metadata (strings)
-- **CSAT Score**: Target variable (integer)
 
 ---
 

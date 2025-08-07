@@ -68,7 +68,7 @@ The dataset includes one month of customer service interactions at "Shopzilla," 
 - **Pandas, Numpy** (Data processing)
 - **Keras, TensorFlow** (Deep Learning models)
 - **Matplotlib, Seaborn** (Exploratory Data Analysis and Visualization)
-- **Flask** (Local Model Deployment)
+- **Streamlit** (Local Model Deployment)
 
 ---
 
